@@ -1,0 +1,113 @@
+{% extends 'common.html' %}
+
+{% block title %}Hetvi Bhadja - Portfolio{% endblock %}
+
+{% block content %}
+
+<!-- Floating shapes and animations removed -->
+
+<section class="hero-pro">
+  <div class="hero-container">
+
+    <div class="hero-header">
+      <h1>Hetvi Bhadja</h1>
+      <p class="hero-role">Backend Web Developer</p>
+      <p class="hero-tech">Python · Django · FastAPI</p>
+    </div>
+
+    <div class="hero-card">
+
+      <div class="hero-info">
+        <div>
+          <strong>Email</strong><br>
+          <span>hetvibhadja4@gmail.com</span>
+        </div>
+        <div>
+          <strong>Phone</strong><br>
+          <span>+999-811-9288</span>
+        </div>
+        <div>
+          <strong>Location</strong><br>
+          <span>Rajkot, Gujarat, India</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a class="btn dark" href="https://linkedin.com/in/hetvi-bhadja-0231ab39b/" target="_blank">LinkedIn</a>
+        <a class="btn blue" href="https://github.com/bhadjahetvi" target="_blank">GitHub</a>
+      </div>
+
+    </div>
+
+    <div class="hero-about">
+      <p>
+        Motivated and detail-oriented BCA student with hands-on experience in Python,
+        Django, FastAPI, and AI-driven application development. Strong interest in backend
+        engineering, API development, and real-world software solutions.
+      </p>
+
+      <div class="hero-tags">
+        <span>Django API Active</span>
+        <span>FastAPI Running</span>
+        <span>Database Connected</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- Skills Preview Section -->
+<section class="content-section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="skill-title">Backend Development</h3>
+                        <p>Experienced in Django, FastAPI, and REST API development with focus on scalable architecture.</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="skill-title">AI Integration</h3>
+                        <p>Built AI-powered applications using FastAPI with prompt engineering and dynamic content creation.</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="skill-title">Continuous Learning</h3>
+                        <p>Completed BCA at Atmiya University with practical experience gained through multiple internships.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>Let's Work Together</h2>
+                <p class="lead">Interested in collaborating or learning more about my work?</p>
+                <div class="mt-4">
+                    <a href="{% url 'about' %}" class="btn btn-ontline-dark bg-dark text-white me-3">Learn More About Me</a>
+                    <a href="{% url 'contact' %}" class="btn btn-outline-dark">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
